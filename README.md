@@ -17,15 +17,16 @@ Ball by ball records of every international ODI match is available on the web, i
 
 <h2>The Main Approach</h2>
 <ul>
-  <li>I experimented with various classification models like Naive Bayes, Logistic Regression, Random Forest, SVC etc.</li>  
-  <li>I have updated the team features for every match by using the last 5 matches played by the individual teams.</li>
-  <li>Surprisingly it has been observed that, in none of the research papers or blogs, RNNs has been used for the prediction although we know that they are supposed to perform well on any sequential data very well, like LSTM  and GRU has been previously used for stock market prediction. 
-</li>
-  <li>However when I tried to exploit the LSTM network it was actually a colossal failure. Due to lack of expertise I might have gone wrong with the fundamental idea, but I definitely plan on working on it at a later point of time.
+  <li>We experimented with various classification models like Naive Bayes, Logistic Regression, Random Forest, SVC etc.</li>  
 </li>
 </ul>
 <h2>Results</h2>
- <img src="results.png" alt="Results" width="500" height="400"> 
+  <ul>
+ <li>Linear Regression : 67%</li>
+ <li>Support Vector Classifier : 67%</li>
+ <li>Gaussian Naive bayes : 57%</li>
+ <li>Random Forest : 49%</li>
+  </ul>
 <h2>Conclusion</h2>
 It is possible to predict the winner of ODI  cricket games in more than two thirds of instances. This is an improvement upon levels present in the gambling industry today and implies a potential financial opportunity. However, the overall level of accuracy is lower than that observed in many other sports and undergoes more significant fluctuations. This suggests that ODI cricket has a relatively high level of instability or randomness within it, which should come as no surprise to those familiar with the game.<br>
 Of the various methods tried, the most effective classification method was a Logistic Regression model combined with significant data preprocessing, feature selection and complex hierarchical features.<br>
